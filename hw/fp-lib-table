@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "OpenFireworks") (type "KiCad") (uri "${KIPRJMOD}/footprints/OpenFireworks.pretty") (options "") (descr "Project combo/custom lands"))
+)

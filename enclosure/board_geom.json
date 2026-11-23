@@ -1,0 +1,5844 @@
+{
+ "outline": {
+  "xmin": -0.06,
+  "xmax": 100.06,
+  "ymin": -0.06,
+  "ymax": 100.06
+ },
+ "leds": [
+  {
+   "ref": "D1",
+   "side": "B",
+   "x": 16.5,
+   "y": 6.0
+  },
+  {
+   "ref": "D2",
+   "side": "B",
+   "x": 16.5,
+   "y": 14.0
+  },
+  {
+   "ref": "D3",
+   "side": "B",
+   "x": 16.5,
+   "y": 22.0
+  },
+  {
+   "ref": "D4",
+   "side": "B",
+   "x": 16.5,
+   "y": 30.0
+  },
+  {
+   "ref": "D5",
+   "side": "B",
+   "x": 16.5,
+   "y": 38.0
+  },
+  {
+   "ref": "D6",
+   "side": "B",
+   "x": 16.5,
+   "y": 46.0
+  },
+  {
+   "ref": "D7",
+   "side": "B",
+   "x": 16.5,
+   "y": 54.0
+  },
+  {
+   "ref": "D8",
+   "side": "B",
+   "x": 16.5,
+   "y": 62.0
+  },
+  {
+   "ref": "D9",
+   "side": "B",
+   "x": 16.5,
+   "y": 70.0
+  },
+  {
+   "ref": "D10",
+   "side": "B",
+   "x": 16.5,
+   "y": 78.0
+  },
+  {
+   "ref": "D11",
+   "side": "B",
+   "x": 16.5,
+   "y": 86.0
+  },
+  {
+   "ref": "D12",
+   "side": "B",
+   "x": 16.5,
+   "y": 94.0
+  },
+  {
+   "ref": "D49",
+   "side": "B",
+   "x": 45.5,
+   "y": 76.0
+  },
+  {
+   "ref": "D50",
+   "side": "B",
+   "x": 57.5,
+   "y": 76.0
+  },
+  {
+   "ref": "D13",
+   "side": "B",
+   "x": 83.5,
+   "y": 6.0
+  },
+  {
+   "ref": "D14",
+   "side": "B",
+   "x": 83.5,
+   "y": 14.0
+  },
+  {
+   "ref": "D15",
+   "side": "B",
+   "x": 83.5,
+   "y": 22.0
+  },
+  {
+   "ref": "D16",
+   "side": "B",
+   "x": 83.5,
+   "y": 30.0
+  },
+  {
+   "ref": "D17",
+   "side": "B",
+   "x": 83.5,
+   "y": 38.0
+  },
+  {
+   "ref": "D18",
+   "side": "B",
+   "x": 83.5,
+   "y": 46.0
+  },
+  {
+   "ref": "D19",
+   "side": "B",
+   "x": 83.5,
+   "y": 54.0
+  },
+  {
+   "ref": "D20",
+   "side": "B",
+   "x": 83.5,
+   "y": 62.0
+  },
+  {
+   "ref": "D21",
+   "side": "B",
+   "x": 83.5,
+   "y": 70.0
+  },
+  {
+   "ref": "D22",
+   "side": "B",
+   "x": 83.5,
+   "y": 78.0
+  },
+  {
+   "ref": "D23",
+   "side": "B",
+   "x": 83.5,
+   "y": 86.0
+  },
+  {
+   "ref": "D24",
+   "side": "B",
+   "x": 83.5,
+   "y": 94.0
+  }
+ ],
+ "jacks": [
+  {
+   "ref": "J1",
+   "x": 0.0,
+   "y": 6.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 2.56,
+   "ymax": 9.44
+  },
+  {
+   "ref": "J2",
+   "x": 0.0,
+   "y": 14.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 10.56,
+   "ymax": 17.44
+  },
+  {
+   "ref": "J3",
+   "x": 0.0,
+   "y": 22.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 18.56,
+   "ymax": 25.44
+  },
+  {
+   "ref": "J4",
+   "x": 0.0,
+   "y": 30.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 26.56,
+   "ymax": 33.44
+  },
+  {
+   "ref": "J5",
+   "x": 0.0,
+   "y": 38.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 34.56,
+   "ymax": 41.44
+  },
+  {
+   "ref": "J6",
+   "x": 0.0,
+   "y": 46.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 42.56,
+   "ymax": 49.44
+  },
+  {
+   "ref": "J7",
+   "x": 0.0,
+   "y": 54.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 50.56,
+   "ymax": 57.44
+  },
+  {
+   "ref": "J8",
+   "x": 0.0,
+   "y": 62.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 58.56,
+   "ymax": 65.44
+  },
+  {
+   "ref": "J9",
+   "x": 0.0,
+   "y": 70.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 66.56,
+   "ymax": 73.44
+  },
+  {
+   "ref": "J10",
+   "x": 0.0,
+   "y": 78.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 74.56,
+   "ymax": 81.44
+  },
+  {
+   "ref": "J11",
+   "x": 0.0,
+   "y": 86.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 82.56,
+   "ymax": 89.44
+  },
+  {
+   "ref": "J12",
+   "x": 0.0,
+   "y": 94.0,
+   "xmin": -2.3,
+   "xmax": 13.05,
+   "ymin": 90.56,
+   "ymax": 97.44
+  },
+  {
+   "ref": "J13",
+   "x": 100.0,
+   "y": 6.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 2.56,
+   "ymax": 9.44
+  },
+  {
+   "ref": "J14",
+   "x": 100.0,
+   "y": 14.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 10.56,
+   "ymax": 17.44
+  },
+  {
+   "ref": "J15",
+   "x": 100.0,
+   "y": 22.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 18.56,
+   "ymax": 25.44
+  },
+  {
+   "ref": "J16",
+   "x": 100.0,
+   "y": 30.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 26.56,
+   "ymax": 33.44
+  },
+  {
+   "ref": "J17",
+   "x": 100.0,
+   "y": 38.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 34.56,
+   "ymax": 41.44
+  },
+  {
+   "ref": "J18",
+   "x": 100.0,
+   "y": 46.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 42.56,
+   "ymax": 49.44
+  },
+  {
+   "ref": "J19",
+   "x": 100.0,
+   "y": 54.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 50.56,
+   "ymax": 57.44
+  },
+  {
+   "ref": "J20",
+   "x": 100.0,
+   "y": 62.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 58.56,
+   "ymax": 65.44
+  },
+  {
+   "ref": "J21",
+   "x": 100.0,
+   "y": 70.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 66.56,
+   "ymax": 73.44
+  },
+  {
+   "ref": "J22",
+   "x": 100.0,
+   "y": 78.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 74.56,
+   "ymax": 81.44
+  },
+  {
+   "ref": "J23",
+   "x": 100.0,
+   "y": 86.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 82.56,
+   "ymax": 89.44
+  },
+  {
+   "ref": "J24",
+   "x": 100.0,
+   "y": 94.0,
+   "xmin": 86.96,
+   "xmax": 102.29,
+   "ymin": 90.56,
+   "ymax": 97.44
+  }
+ ],
+ "mods": {
+  "BT1": {
+   "ref": "BT1",
+   "side": "F",
+   "x": 52.12,
+   "y": 38.0,
+   "rot": 180.0,
+   "xmin": 22.58,
+   "xmax": 81.66,
+   "ymin": 5.96,
+   "ymax": 70.04
+  },
+  "SW1": {
+   "ref": "SW1",
+   "side": "F",
+   "x": 46.0,
+   "y": 88.3,
+   "rot": 0.0,
+   "xmin": 37.8,
+   "xmax": 54.2,
+   "ymin": 86.7,
+   "ymax": 104.02
+  },
+  "A1": {
+   "ref": "A1",
+   "side": "F",
+   "x": 17.38,
+   "y": 101.07,
+   "rot": 0.0,
+   "xmin": 15.08,
+   "xmax": 34.91,
+   "ymin": 93.35,
+   "ymax": 102.69
+  }
+ },
+ "parts": [
+  {
+   "ref": "R153",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 31.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    31.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C2",
+   "model": "C_0805_2012Metric",
+   "x": 58.15,
+   "y": 80.95,
+   "side": "F",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    58.15,
+    80.95
+   ],
+   "pad_span": [
+    1.9,
+    0.0
+   ]
+  },
+  {
+   "ref": "R156",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 55.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    55.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R172",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 84.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    84.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C63",
+   "model": "C_1206_3216Metric",
+   "x": 56.9,
+   "y": 95.38,
+   "side": "F",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    56.9,
+    95.38
+   ],
+   "pad_span": [
+    0.0,
+    2.94
+   ]
+  },
+  {
+   "ref": "BT1",
+   "model": "BatteryHolder_Keystone_2477_4xAA",
+   "x": 52.12,
+   "y": 38.0,
+   "side": "F",
+   "value": "4xAA holder",
+   "dnp": false,
+   "pad_centre": [
+    38.91,
+    46.0
+   ],
+   "pad_span": [
+    26.42,
+    57.4
+   ]
+  },
+  {
+   "ref": "R165",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 28.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    28.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R155",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 47.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    47.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R169",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 60.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    60.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C66",
+   "model": "C_0805_2012Metric",
+   "x": 58.15,
+   "y": 76.25,
+   "side": "F",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    58.15,
+    76.25
+   ],
+   "pad_span": [
+    1.9,
+    0.0
+   ]
+  },
+  {
+   "ref": "R160",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 87.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    87.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R163",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 12.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    12.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R152",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 23.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    23.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R167",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 44.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    44.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C67",
+   "model": "CP_Radial_D8.0mm_P3.50mm",
+   "x": 74.8,
+   "y": 89.25,
+   "side": "F",
+   "value": "470uF 10V",
+   "dnp": false,
+   "pad_centre": [
+    74.8,
+    91.0
+   ],
+   "pad_span": [
+    0.0,
+    3.5
+   ]
+  },
+  {
+   "ref": "R158",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 71.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    71.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R161",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 95.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    95.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C17",
+   "model": "C_0603_1608Metric",
+   "x": 36.35,
+   "y": 89.85,
+   "side": "F",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    36.35,
+    89.85
+   ],
+   "pad_span": [
+    0.0,
+    1.54
+   ]
+  },
+  {
+   "ref": "R171",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 76.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    76.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C68",
+   "model": "CP_Radial_D8.0mm_P3.50mm",
+   "x": 74.8,
+   "y": 78.75,
+   "side": "F",
+   "value": "470uF 10V",
+   "dnp": false,
+   "pad_centre": [
+    74.8,
+    80.5
+   ],
+   "pad_span": [
+    0.0,
+    3.5
+   ]
+  },
+  {
+   "ref": "R173",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 92.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    92.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R150",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 7.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    7.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R159",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 79.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    79.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C62",
+   "model": "C_1206_3216Metric",
+   "x": 56.9,
+   "y": 89.62,
+   "side": "F",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    56.9,
+    89.615
+   ],
+   "pad_span": [
+    0.0,
+    2.95
+   ]
+  },
+  {
+   "ref": "R154",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 39.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    39.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "SW1",
+   "model": "Switch_Slide_LightCountry_5MS1_M6",
+   "x": 46.0,
+   "y": 88.3,
+   "side": "F",
+   "value": "5MS1S102AM6QE",
+   "dnp": false,
+   "pad_centre": [
+    46.0,
+    92.112
+   ],
+   "pad_span": [
+    13.2,
+    9.53
+   ]
+  },
+  {
+   "ref": "R166",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 36.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    36.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R170",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 68.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    68.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "U9",
+   "model": "SOT-223-5",
+   "x": 64.5,
+   "y": 79.5,
+   "side": "F",
+   "value": "LP38692MP-3.3",
+   "dnp": false,
+   "pad_centre": [
+    62.71,
+    79.5
+   ],
+   "pad_span": [
+    6.3,
+    4.5
+   ]
+  },
+  {
+   "ref": "C7",
+   "model": "C_0805_2012Metric",
+   "x": 36.35,
+   "y": 93.45,
+   "side": "F",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    36.35,
+    93.45
+   ],
+   "pad_span": [
+    0.0,
+    1.9
+   ]
+  },
+  {
+   "ref": "R168",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 52.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    52.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R151",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 15.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    15.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "A1",
+   "model": "ESP32C3_SuperMini_MINIV1",
+   "x": 17.38,
+   "y": 101.07,
+   "side": "F",
+   "value": "ESP32-C3 SuperMini",
+   "dnp": false,
+   "pad_centre": [
+    25.0,
+    89.64
+   ],
+   "pad_span": [
+    16.34,
+    17.78
+   ]
+  },
+  {
+   "ref": "R157",
+   "model": "R_0603_1608Metric",
+   "x": 5.48,
+   "y": 63.02,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    5.485,
+    63.02
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "U11",
+   "model": "TO-252-2",
+   "x": 65.34,
+   "y": 92.5,
+   "side": "F",
+   "value": "LP38691DTX-5.0",
+   "dnp": false,
+   "pad_centre": [
+    64.803,
+    92.5
+   ],
+   "pad_span": [
+    7.98,
+    4.56
+   ]
+  },
+  {
+   "ref": "R164",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 20.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    20.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R162",
+   "model": "R_0603_1608Metric",
+   "x": 94.52,
+   "y": 4.98,
+   "side": "F",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    94.515,
+    4.98
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "U10",
+   "model": "SOT-353_SC-70-5",
+   "x": 56.0,
+   "y": 81.0,
+   "side": "B",
+   "value": "SN74LV1T125DCKR",
+   "dnp": false,
+   "pad_centre": [
+    56.168,
+    81.0
+   ],
+   "pad_span": [
+    1.68,
+    1.3
+   ]
+  },
+  {
+   "ref": "Q14",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 14.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    14.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R8",
+   "model": "R_0603_1608Metric",
+   "x": 58.5,
+   "y": 69.5,
+   "side": "B",
+   "value": "220k",
+   "dnp": false,
+   "pad_centre": [
+    58.5,
+    69.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R56",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 11.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    11.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R32",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 43.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    43.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "D42",
+   "model": "D_SOD-523",
+   "x": 79.7,
+   "y": 49.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    79.7,
+    49.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "C70",
+   "model": "C_0603_1608Metric",
+   "x": 59.5,
+   "y": 95.5,
+   "side": "B",
+   "value": "10nF",
+   "dnp": false,
+   "pad_centre": [
+    59.5,
+    95.5
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP15",
+   "model": "",
+   "x": 63.0,
+   "y": 24.3,
+   "side": "B",
+   "value": "JP_D14",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    24.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D18",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 46.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    46.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R181",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 52.5,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    52.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP15",
+   "model": "",
+   "x": 45.9,
+   "y": 7.4,
+   "side": "B",
+   "value": "VLDO",
+   "dnp": false,
+   "pad_centre": [
+    45.9,
+    7.4
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP6",
+   "model": "",
+   "x": 54.0,
+   "y": 2.2,
+   "side": "B",
+   "value": "GND3",
+   "dnp": false,
+   "pad_centre": [
+    54.0,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP10",
+   "model": "",
+   "x": 37.0,
+   "y": 80.3,
+   "side": "B",
+   "value": "JP_D9",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    80.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "C19",
+   "model": "C_0603_1608Metric",
+   "x": 16.5,
+   "y": 18.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    18.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R67",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 38.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    38.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP20",
+   "model": "",
+   "x": 63.0,
+   "y": 64.3,
+   "side": "B",
+   "value": "JP_D19",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    64.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D11",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 86.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    86.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R26",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 27.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    27.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R58",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 14.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    14.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C75",
+   "model": "C_0603_1608Metric",
+   "x": 83.5,
+   "y": 82.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    82.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R31",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 38.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    38.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C22",
+   "model": "C_0603_1608Metric",
+   "x": 16.5,
+   "y": 66.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    66.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R88",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 94.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    94.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP10",
+   "model": "",
+   "x": 43.2,
+   "y": 4.8,
+   "side": "B",
+   "value": "SCK",
+   "dnp": false,
+   "pad_centre": [
+    43.2,
+    4.8
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "D38",
+   "model": "D_SOD-523",
+   "x": 79.7,
+   "y": 17.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    79.7,
+    17.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "U4",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 43.5,
+   "y": 55.1,
+   "side": "B",
+   "value": "74HC595",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    55.1
+   ],
+   "pad_span": [
+    4.94,
+    8.89
+   ]
+  },
+  {
+   "ref": "J22",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 78.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    78.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "JP11",
+   "model": "",
+   "x": 37.0,
+   "y": 88.3,
+   "side": "B",
+   "value": "JP_D10",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    88.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "J13",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 6.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    6.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "JP16",
+   "model": "",
+   "x": 63.0,
+   "y": 32.3,
+   "side": "B",
+   "value": "JP_D15",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    32.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R2",
+   "model": "R_0603_1608Metric",
+   "x": 47.5,
+   "y": 96.5,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    47.5,
+    96.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R44",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 75.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    75.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "J12",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 94.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    93.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R33",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 48.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    48.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "D41",
+   "model": "D_SOD-523",
+   "x": 85.2,
+   "y": 41.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    85.2,
+    41.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R48",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 88.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    88.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP12",
+   "model": "",
+   "x": 37.0,
+   "y": 96.3,
+   "side": "B",
+   "value": "JP_D11",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    96.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R49",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 86.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    86.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R10",
+   "model": "R_0603_1608Metric",
+   "x": 44.5,
+   "y": 67.0,
+   "side": "B",
+   "value": "33R",
+   "dnp": false,
+   "pad_centre": [
+    44.5,
+    67.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R78",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 72.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    72.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R79",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 70.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    70.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP13",
+   "model": "",
+   "x": 63.0,
+   "y": 8.3,
+   "side": "B",
+   "value": "JP_D12",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    8.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "TP1",
+   "model": "",
+   "x": 40.5,
+   "y": 2.2,
+   "side": "B",
+   "value": "VSYS",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "J23",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 86.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    86.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R47",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 83.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    83.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R5",
+   "model": "R_0603_1608Metric",
+   "x": 51.5,
+   "y": 91.5,
+   "side": "B",
+   "value": "2.2k",
+   "dnp": false,
+   "pad_centre": [
+    51.5,
+    91.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q12",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 94.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    94.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "J19",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 54.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    54.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "J7",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 54.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    53.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "D16",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 30.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    30.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "D15",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 22.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    22.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "Q4",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 30.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    30.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R23",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 19.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    19.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP14",
+   "model": "",
+   "x": 63.0,
+   "y": 16.3,
+   "side": "B",
+   "value": "JP_D13",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    16.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R87",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 96.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    96.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "U7",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 58.0,
+   "y": 42.9,
+   "side": "B",
+   "value": "74HC4051D",
+   "dnp": false,
+   "pad_centre": [
+    58.0,
+    42.9
+   ],
+   "pad_span": [
+    4.94,
+    8.89
+   ]
+  },
+  {
+   "ref": "C11",
+   "model": "C_0603_1608Metric",
+   "x": 41.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    41.0,
+    62.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "J24",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 94.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    94.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "Q13",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 6.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    6.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R73",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 54.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    54.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C71",
+   "model": "C_0603_1608Metric",
+   "x": 83.5,
+   "y": 18.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    18.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "D32",
+   "model": "D_SOD-523",
+   "x": 18.3,
+   "y": 58.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    18.3,
+    58.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "D46",
+   "model": "D_SOD-523",
+   "x": 79.7,
+   "y": 81.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    79.7,
+    81.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J11",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 86.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    85.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R16",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 61.0,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    61.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP3",
+   "model": "",
+   "x": 37.0,
+   "y": 24.3,
+   "side": "B",
+   "value": "JP_D2",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    24.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D36",
+   "model": "D_SOD-523",
+   "x": 18.3,
+   "y": 90.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    18.3,
+    90.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R62",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 27.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    27.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R59",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 19.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    19.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R82",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 78.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    78.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R75",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 64.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    64.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "J17",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 38.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    38.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "C21",
+   "model": "C_0603_1608Metric",
+   "x": 16.5,
+   "y": 50.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    50.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R61",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 22.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    22.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R27",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 32.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    32.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R85",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 86.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    86.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP19",
+   "model": "",
+   "x": 63.0,
+   "y": 56.3,
+   "side": "B",
+   "value": "JP_D18",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    56.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R187",
+   "model": "R_0603_1608Metric",
+   "x": 55.0,
+   "y": 94.5,
+   "side": "B",
+   "value": "1k",
+   "dnp": false,
+   "pad_centre": [
+    55.0,
+    94.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "J2",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 14.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    13.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R182",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 30.7,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    30.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D40",
+   "model": "D_SOD-523",
+   "x": 79.7,
+   "y": 33.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    79.7,
+    33.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "C9",
+   "model": "C_0603_1608Metric",
+   "x": 44.5,
+   "y": 94.0,
+   "side": "B",
+   "value": "10nF",
+   "dnp": false,
+   "pad_centre": [
+    44.5,
+    94.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q25",
+   "model": "SOT-23",
+   "x": 55.0,
+   "y": 88.0,
+   "side": "B",
+   "value": "AO3400 (arm driver)",
+   "dnp": false,
+   "pad_centre": [
+    55.313,
+    88.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "C8",
+   "model": "C_0603_1608Metric",
+   "x": 36.5,
+   "y": 35.1,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    36.5,
+    35.1
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q16",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 30.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    30.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "TP7",
+   "model": "",
+   "x": 56.7,
+   "y": 2.2,
+   "side": "B",
+   "value": "VBAT_DIV",
+   "dnp": false,
+   "pad_centre": [
+    56.7,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "R17",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 3.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    3.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R60",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 24.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    24.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D19",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 54.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    54.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "C3",
+   "model": "C_0603_1608Metric",
+   "x": 36.5,
+   "y": 21.4,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    36.5,
+    21.4
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R184",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 55.1,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    55.1
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R18",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 8.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    8.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "U8",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 58.0,
+   "y": 55.1,
+   "side": "B",
+   "value": "74HC4051D",
+   "dnp": false,
+   "pad_centre": [
+    58.0,
+    55.1
+   ],
+   "pad_span": [
+    4.94,
+    8.89
+   ]
+  },
+  {
+   "ref": "D29",
+   "model": "D_SOD-523",
+   "x": 14.8,
+   "y": 42.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    14.8,
+    42.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R30",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 40.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    40.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q11",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 86.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    86.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "C69",
+   "model": "C_0603_1608Metric",
+   "x": 59.5,
+   "y": 88.5,
+   "side": "B",
+   "value": "220nF",
+   "dnp": false,
+   "pad_centre": [
+    59.5,
+    88.5
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R22",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 14.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    14.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R63",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 32.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    32.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP5",
+   "model": "",
+   "x": 37.0,
+   "y": 40.3,
+   "side": "B",
+   "value": "JP_D4",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    40.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D28",
+   "model": "D_SOD-523",
+   "x": 18.3,
+   "y": 26.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    18.3,
+    26.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J9",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 70.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    69.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R68",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 43.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    43.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q20",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    62.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R4",
+   "model": "R_0603_1608Metric",
+   "x": 40.5,
+   "y": 72.0,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    72.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D12",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 94.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    94.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R84",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 88.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    88.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R14",
+   "model": "R_0603_1608Metric",
+   "x": 58.5,
+   "y": 64.5,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    58.5,
+    64.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q15",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 22.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    22.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "JP18",
+   "model": "",
+   "x": 63.0,
+   "y": 48.3,
+   "side": "B",
+   "value": "JP_D17",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    48.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D3",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 22.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    22.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "U6",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 58.0,
+   "y": 30.7,
+   "side": "B",
+   "value": "74HC4051D",
+   "dnp": false,
+   "pad_centre": [
+    58.0,
+    30.7
+   ],
+   "pad_span": [
+    4.94,
+    8.89
+   ]
+  },
+  {
+   "ref": "C10",
+   "model": "C_0603_1608Metric",
+   "x": 36.5,
+   "y": 45.3,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    36.5,
+    45.3
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP1",
+   "model": "",
+   "x": 37.0,
+   "y": 8.3,
+   "side": "B",
+   "value": "JP_D0",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    8.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "Q23",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 86.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    86.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "C14",
+   "model": "C_0603_1608Metric",
+   "x": 51.0,
+   "y": 47.3,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    51.0,
+    47.3
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "D9",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 70.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    70.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "C24",
+   "model": "C_0603_1608Metric",
+   "x": 83.5,
+   "y": 10.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    10.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "D2",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 14.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    14.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "C18",
+   "model": "C_0603_1608Metric",
+   "x": 16.5,
+   "y": 10.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    10.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R9",
+   "model": "R_0603_1608Metric",
+   "x": 40.5,
+   "y": 67.0,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    67.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP7",
+   "model": "",
+   "x": 37.0,
+   "y": 56.3,
+   "side": "B",
+   "value": "JP_D6",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    56.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R13",
+   "model": "R_0603_1608Metric",
+   "x": 44.5,
+   "y": 64.5,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    44.5,
+    64.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R55",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 6.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    6.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C64",
+   "model": "C_1206_3216Metric",
+   "x": 57.0,
+   "y": 84.0,
+   "side": "B",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    57.0,
+    84.0
+   ],
+   "pad_span": [
+    2.94,
+    0.0
+   ]
+  },
+  {
+   "ref": "D51",
+   "model": "D_SOD-123",
+   "x": 51.5,
+   "y": 84.0,
+   "side": "B",
+   "value": "1N5819HW",
+   "dnp": false,
+   "pad_centre": [
+    51.5,
+    84.0
+   ],
+   "pad_span": [
+    3.3,
+    0.0
+   ]
+  },
+  {
+   "ref": "D13",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 6.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    6.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R69",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 48.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    48.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R80",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 75.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    75.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C15",
+   "model": "C_0603_1608Metric",
+   "x": 58.5,
+   "y": 62.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    58.5,
+    62.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP9",
+   "model": "",
+   "x": 37.0,
+   "y": 72.3,
+   "side": "B",
+   "value": "JP_D8",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    72.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R72",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 56.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    56.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C74",
+   "model": "C_0603_1608Metric",
+   "x": 83.5,
+   "y": 66.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    66.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP17",
+   "model": "",
+   "x": 63.0,
+   "y": 40.3,
+   "side": "B",
+   "value": "JP_D16",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    40.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "C72",
+   "model": "C_0603_1608Metric",
+   "x": 83.5,
+   "y": 34.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    34.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q7",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 54.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    54.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R6",
+   "model": "R_0603_1608Metric",
+   "x": 39.5,
+   "y": 69.5,
+   "side": "B",
+   "value": "220k",
+   "dnp": false,
+   "pad_centre": [
+    39.5,
+    69.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP6",
+   "model": "",
+   "x": 37.0,
+   "y": 48.3,
+   "side": "B",
+   "value": "JP_D5",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    48.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D49",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 45.5,
+   "y": 76.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    45.5,
+    76.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R19",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 6.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    6.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D48",
+   "model": "D_SOD-523",
+   "x": 81.7,
+   "y": 89.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    81.7,
+    89.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J1",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 6.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    5.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "C61",
+   "model": "C_0603_1608Metric",
+   "x": 43.5,
+   "y": 96.5,
+   "side": "B",
+   "value": "10nF",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    96.5
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "D4",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 30.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    30.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "Q24",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 94.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    94.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "C1",
+   "model": "C_0805_2012Metric",
+   "x": 39.5,
+   "y": 91.5,
+   "side": "B",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    39.5,
+    91.5
+   ],
+   "pad_span": [
+    1.9,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP5",
+   "model": "",
+   "x": 51.3,
+   "y": 2.2,
+   "side": "B",
+   "value": "GATE_OE_N",
+   "dnp": false,
+   "pad_centre": [
+    51.3,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "R64",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 30.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    30.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D20",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 62.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    62.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R43",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 70.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    70.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q1",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 6.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    6.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "Q27",
+   "model": "TSOT-23-6",
+   "x": 60.0,
+   "y": 92.0,
+   "side": "B",
+   "value": "DMP2035UVT (ARM rail)",
+   "dnp": false,
+   "pad_centre": [
+    60.0,
+    92.0
+   ],
+   "pad_span": [
+    2.28,
+    1.9
+   ]
+  },
+  {
+   "ref": "D6",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 46.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    46.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R34",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 46.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    46.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R46",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 78.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    78.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R20",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 11.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    11.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C60",
+   "model": "C_0603_1608Metric",
+   "x": 58.5,
+   "y": 72.0,
+   "side": "B",
+   "value": "10nF",
+   "dnp": false,
+   "pad_centre": [
+    58.5,
+    72.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "J3",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 22.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    21.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R54",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 8.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    8.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D8",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 62.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    62.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R41",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 67.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    67.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "J18",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 46.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    46.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "C4",
+   "model": "C_0805_2012Metric",
+   "x": 44.0,
+   "y": 91.5,
+   "side": "B",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    44.0,
+    91.5
+   ],
+   "pad_span": [
+    1.9,
+    0.0
+   ]
+  },
+  {
+   "ref": "C16",
+   "model": "C_0603_1608Metric",
+   "x": 48.5,
+   "y": 94.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    48.5,
+    94.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "D31",
+   "model": "D_SOD-523",
+   "x": 14.8,
+   "y": 58.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    14.8,
+    58.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP24",
+   "model": "",
+   "x": 63.0,
+   "y": 96.3,
+   "side": "B",
+   "value": "JP_D23",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    96.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "R7",
+   "model": "R_0603_1608Metric",
+   "x": 43.5,
+   "y": 69.5,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    69.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D1",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 6.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    6.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R74",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 59.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    59.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R24",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 24.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    24.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R29",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 35.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    35.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "D45",
+   "model": "D_SOD-523",
+   "x": 85.2,
+   "y": 73.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    85.2,
+    73.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R83",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 83.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    83.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "J20",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    62.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R45",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 80.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    80.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R40",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    62.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q26",
+   "model": "SOT-23",
+   "x": 39.5,
+   "y": 76.5,
+   "side": "B",
+   "value": "AO3400 (arm driver)",
+   "dnp": false,
+   "pad_centre": [
+    39.813,
+    76.5
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R39",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 64.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    64.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q22",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 78.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    78.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "D33",
+   "model": "D_SOD-523",
+   "x": 14.8,
+   "y": 74.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    14.8,
+    74.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q18",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 46.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    46.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "J6",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 46.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    45.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "D43",
+   "model": "D_SOD-523",
+   "x": 85.2,
+   "y": 57.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    85.2,
+    57.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP3",
+   "model": "",
+   "x": 45.9,
+   "y": 2.2,
+   "side": "B",
+   "value": "3V3",
+   "dnp": false,
+   "pad_centre": [
+    45.9,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q8",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    62.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R36",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 56.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    56.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "D22",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 78.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    78.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R183",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 42.9,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    42.9
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D21",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 70.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    70.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "D25",
+   "model": "D_SOD-523",
+   "x": 21.8,
+   "y": 3.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    21.8,
+    3.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J10",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 78.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    77.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R28",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 30.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    30.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D37",
+   "model": "D_SOD-523",
+   "x": 79.7,
+   "y": 9.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    79.7,
+    9.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "D30",
+   "model": "D_SOD-523",
+   "x": 18.3,
+   "y": 42.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    18.3,
+    42.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R71",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 51.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    51.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "J15",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 22.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    22.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "Q21",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 70.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    70.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "D35",
+   "model": "D_SOD-523",
+   "x": 14.8,
+   "y": 90.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    14.8,
+    90.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "U3",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 43.5,
+   "y": 42.9,
+   "side": "B",
+   "value": "74HC595",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    42.9
+   ],
+   "pad_span": [
+    4.94,
+    8.89
+   ]
+  },
+  {
+   "ref": "JP22",
+   "model": "",
+   "x": 63.0,
+   "y": 80.3,
+   "side": "B",
+   "value": "JP_D21",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    80.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D39",
+   "model": "D_SOD-523",
+   "x": 85.2,
+   "y": 25.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    85.2,
+    25.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "C73",
+   "model": "C_0603_1608Metric",
+   "x": 83.5,
+   "y": 50.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    50.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q2",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 14.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    14.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R81",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 80.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    80.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D44",
+   "model": "D_SOD-523",
+   "x": 79.7,
+   "y": 65.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    79.7,
+    65.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J4",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 30.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    29.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "R42",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 72.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    72.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "C65",
+   "model": "C_0603_1608Metric",
+   "x": 52.0,
+   "y": 76.5,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    52.0,
+    76.5
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "D10",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 78.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    78.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "C13",
+   "model": "C_0603_1608Metric",
+   "x": 51.0,
+   "y": 35.1,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    51.0,
+    35.1
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "J8",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    61.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "D7",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 54.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    54.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "Q10",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 78.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    78.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "C23",
+   "model": "C_0603_1608Metric",
+   "x": 16.5,
+   "y": 82.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    82.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q17",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 38.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    38.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R70",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 46.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    46.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R65",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 35.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    35.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D17",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 38.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    38.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "C20",
+   "model": "C_0603_1608Metric",
+   "x": 16.5,
+   "y": 34.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    34.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R77",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 67.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    67.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP14",
+   "model": "",
+   "x": 43.2,
+   "y": 7.4,
+   "side": "B",
+   "value": "V5_LED",
+   "dnp": false,
+   "pad_centre": [
+    43.2,
+    7.4
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "R37",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 54.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    54.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D23",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 86.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    86.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "U1",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 43.5,
+   "y": 18.5,
+   "side": "B",
+   "value": "74HC595",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    18.5
+   ],
+   "pad_span": [
+    4.94,
+    8.88
+   ]
+  },
+  {
+   "ref": "C5",
+   "model": "C_0805_2012Metric",
+   "x": 36.25,
+   "y": 84.75,
+   "side": "B",
+   "value": "10uF",
+   "dnp": false,
+   "pad_centre": [
+    36.25,
+    84.75
+   ],
+   "pad_span": [
+    1.9,
+    0.0
+   ]
+  },
+  {
+   "ref": "R185",
+   "model": "R_0603_1608Metric",
+   "x": 25.0,
+   "y": 97.5,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    25.0,
+    97.5
+   ],
+   "pad_span": [
+    1.66,
+    0.0
+   ]
+  },
+  {
+   "ref": "J21",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 70.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    70.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "JP8",
+   "model": "",
+   "x": 37.0,
+   "y": 64.3,
+   "side": "B",
+   "value": "JP_D7",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    64.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "D26",
+   "model": "D_SOD-523",
+   "x": 20.3,
+   "y": 10.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    20.3,
+    10.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J14",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 14.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    14.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "Q6",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 46.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    46.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "J5",
+   "model": "Jack_35mm_PJ320A",
+   "x": 0.0,
+   "y": 38.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    6.883,
+    37.223
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "Q9",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 70.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    70.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "D24",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 94.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    94.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "C12",
+   "model": "C_0603_1608Metric",
+   "x": 51.0,
+   "y": 22.9,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    51.0,
+    22.9
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q28",
+   "model": "TSOT-23-6",
+   "x": 51.5,
+   "y": 80.0,
+   "side": "B",
+   "value": "DMP2035UVT (reverse block)",
+   "dnp": false,
+   "pad_centre": [
+    51.5,
+    80.0
+   ],
+   "pad_span": [
+    2.28,
+    1.9
+   ]
+  },
+  {
+   "ref": "R38",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 59.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    59.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP4",
+   "model": "",
+   "x": 48.6,
+   "y": 2.2,
+   "side": "B",
+   "value": "GND2",
+   "dnp": false,
+   "pad_centre": [
+    48.6,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "F1",
+   "model": "Fuse_2920_7451Metric",
+   "x": 43.5,
+   "y": 83.0,
+   "side": "B",
+   "value": "PPTC 1.5A hold",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    83.0
+   ],
+   "pad_span": [
+    6.94,
+    0.0
+   ]
+  },
+  {
+   "ref": "D5",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 16.5,
+   "y": 38.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    16.5,
+    38.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R1",
+   "model": "R_0603_1608Metric",
+   "x": 55.5,
+   "y": 92.0,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    55.5,
+    92.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "Q5",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 38.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    38.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "D50",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 57.5,
+   "y": 76.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    57.5,
+    76.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "R51",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 96.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    96.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP11",
+   "model": "",
+   "x": 45.9,
+   "y": 4.8,
+   "side": "B",
+   "value": "RCLK",
+   "dnp": false,
+   "pad_centre": [
+    45.9,
+    4.8
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "U5",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 58.0,
+   "y": 18.5,
+   "side": "B",
+   "value": "74HC4051D",
+   "dnp": false,
+   "pad_centre": [
+    58.0,
+    18.5
+   ],
+   "pad_span": [
+    4.94,
+    8.88
+   ]
+  },
+  {
+   "ref": "R15",
+   "model": "R_0603_1608Metric",
+   "x": 45.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    45.0,
+    62.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R186",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 50.0,
+   "side": "B",
+   "value": "10k",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    50.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R57",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 16.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    16.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D34",
+   "model": "D_SOD-523",
+   "x": 18.3,
+   "y": 74.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    18.3,
+    74.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "J16",
+   "model": "Jack_35mm_PJ320A",
+   "x": 100.0,
+   "y": 30.0,
+   "side": "B",
+   "value": "PJ-320A",
+   "dnp": false,
+   "pad_centre": [
+    93.117,
+    30.777
+   ],
+   "pad_span": [
+    9.75,
+    4.66
+   ]
+  },
+  {
+   "ref": "Q3",
+   "model": "SOT-23",
+   "x": 22.0,
+   "y": 22.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    22.313,
+    22.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R12",
+   "model": "R_0603_1608Metric",
+   "x": 40.5,
+   "y": 64.5,
+   "side": "B",
+   "value": "33R",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    64.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R35",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 51.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    51.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R25",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 22.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    22.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C76",
+   "model": "C_0603_1608Metric",
+   "x": 45.5,
+   "y": 72.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    45.5,
+    72.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "R3",
+   "model": "R_0603_1608Metric",
+   "x": 35.0,
+   "y": 76.0,
+   "side": "B",
+   "value": "2.2k",
+   "dnp": false,
+   "pad_centre": [
+    35.0,
+    76.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP2",
+   "model": "",
+   "x": 37.0,
+   "y": 16.3,
+   "side": "B",
+   "value": "JP_D1",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    16.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "Q19",
+   "model": "SOT-23",
+   "x": 78.0,
+   "y": 54.0,
+   "side": "B",
+   "value": "AO3400 (low-side)",
+   "dnp": false,
+   "pad_centre": [
+    77.687,
+    54.0
+   ],
+   "pad_span": [
+    1.88,
+    1.9
+   ]
+  },
+  {
+   "ref": "R76",
+   "model": "R_0603_1608Metric",
+   "x": 67.0,
+   "y": 62.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    67.0,
+    62.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "C6",
+   "model": "C_0603_1608Metric",
+   "x": 40.5,
+   "y": 94.0,
+   "side": "B",
+   "value": "100nF",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    94.0
+   ],
+   "pad_span": [
+    1.56,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP2",
+   "model": "",
+   "x": 43.2,
+   "y": 2.2,
+   "side": "B",
+   "value": "GND",
+   "dnp": false,
+   "pad_centre": [
+    43.2,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "R52",
+   "model": "R_0603_1608Metric",
+   "x": 33.0,
+   "y": 94.0,
+   "side": "B",
+   "value": "47k",
+   "dnp": false,
+   "pad_centre": [
+    33.0,
+    94.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R66",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 40.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    40.3
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R86",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 91.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    91.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP13",
+   "model": "",
+   "x": 40.5,
+   "y": 7.4,
+   "side": "B",
+   "value": "VFIRE",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    7.4
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP12",
+   "model": "",
+   "x": 58.2,
+   "y": 4.8,
+   "side": "B",
+   "value": "RGB_DATA",
+   "dnp": false,
+   "pad_centre": [
+    58.2,
+    4.8
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "D47",
+   "model": "D_SOD-523",
+   "x": 85.2,
+   "y": 89.8,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    85.2,
+    89.8
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "D27",
+   "model": "D_SOD-523",
+   "x": 14.8,
+   "y": 26.2,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    14.8,
+    26.2
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R180",
+   "model": "R_0603_1608Metric",
+   "x": 50.5,
+   "y": 58.5,
+   "side": "B",
+   "value": "33R",
+   "dnp": false,
+   "pad_centre": [
+    50.5,
+    58.5
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "D52",
+   "model": "D_SOD-523",
+   "x": 59.5,
+   "y": 81.0,
+   "side": "B",
+   "value": "ESD5Z12-AQ",
+   "dnp": false,
+   "pad_centre": [
+    59.5,
+    81.0
+   ],
+   "pad_span": [
+    1.4,
+    0.0
+   ]
+  },
+  {
+   "ref": "R50",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 91.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    91.7
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "R53",
+   "model": "R_0603_1608Metric",
+   "x": 71.0,
+   "y": 3.7,
+   "side": "B",
+   "value": "150R",
+   "dnp": false,
+   "pad_centre": [
+    71.0,
+    3.7
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R11",
+   "model": "R_0603_1608Metric",
+   "x": 58.5,
+   "y": 67.0,
+   "side": "B",
+   "value": "33R",
+   "dnp": false,
+   "pad_centre": [
+    58.5,
+    67.0
+   ],
+   "pad_span": [
+    1.64,
+    0.0
+   ]
+  },
+  {
+   "ref": "R21",
+   "model": "R_0603_1608Metric",
+   "x": 29.0,
+   "y": 16.3,
+   "side": "B",
+   "value": "100k",
+   "dnp": false,
+   "pad_centre": [
+    28.995,
+    16.3
+   ],
+   "pad_span": [
+    1.65,
+    0.0
+   ]
+  },
+  {
+   "ref": "TP8",
+   "model": "",
+   "x": 59.4,
+   "y": 2.2,
+   "side": "B",
+   "value": "MUX_ADC",
+   "dnp": false,
+   "pad_centre": [
+    59.4,
+    2.2
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "D14",
+   "model": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+   "x": 83.5,
+   "y": 14.0,
+   "side": "B",
+   "value": "WS2812B",
+   "dnp": false,
+   "pad_centre": [
+    83.5,
+    14.0
+   ],
+   "pad_span": [
+    4.9,
+    3.3
+   ]
+  },
+  {
+   "ref": "TP9",
+   "model": "",
+   "x": 40.5,
+   "y": 4.8,
+   "side": "B",
+   "value": "MOSI",
+   "dnp": false,
+   "pad_centre": [
+    40.5,
+    4.8
+   ],
+   "pad_span": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "ref": "JP21",
+   "model": "",
+   "x": 63.0,
+   "y": 72.3,
+   "side": "B",
+   "value": "JP_D20",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    72.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "JP23",
+   "model": "",
+   "x": 63.0,
+   "y": 88.3,
+   "side": "B",
+   "value": "JP_D22",
+   "dnp": false,
+   "pad_centre": [
+    63.0,
+    88.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "JP4",
+   "model": "",
+   "x": 37.0,
+   "y": 32.3,
+   "side": "B",
+   "value": "JP_D3",
+   "dnp": false,
+   "pad_centre": [
+    37.0,
+    32.3
+   ],
+   "pad_span": [
+    0.0,
+    1.3
+   ]
+  },
+  {
+   "ref": "U2",
+   "model": "SOIC-16_3.9x9.9mm_P1.27mm",
+   "x": 43.5,
+   "y": 30.7,
+   "side": "B",
+   "value": "74HC595",
+   "dnp": false,
+   "pad_centre": [
+    43.5,
+    30.7
+   ],
+   "pad_span": [
+    4.94,
+    8.89
+   ]
+  }
+ ]
+}

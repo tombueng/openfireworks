@@ -1,0 +1,111 @@
+# This repository holds the OUTCOME (design files, fab outputs, enclosure, firmware, web app) and the scripts
+# that reproduce it. Not in it: the owner's own resources — reviews, older versions, sourcing / shop data,
+# datasheets (copyright of their makers), notes, orders, intermediate build output. They stay local.
+
+# --- local tooling / environments ---
+/tools/cadenv/
+/tools/btenv/
+/tools/freerouting/
+node_modules/
+__pycache__/
+*.pyc
+/.claude/
+/.never-stop/
+/logs/
+
+# --- intermediate build output, reviews, status/handover notes ---
+/build/
+
+# --- firmware build output ---
+/firmware/**/build/
+
+# --- KiCad local files ---
+/hw/.history/
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.lck
+_autosave-*
+
+# --- datasheets, sourcing, old parts: local only ---
+/hw/datasheets/
+/hw/3dmodels/*
+!/hw/3dmodels/BatteryHolder_Keystone_2477_4xAA.step
+!/hw/3dmodels/ESP32C3_SuperMini_MINIV1.step
+!/hw/3dmodels/Jack_35mm_PJ320A.step
+!/hw/3dmodels/Switch_Slide_LightCountry_5MS1_M6.step
+/hw/footprints/OpenFireworks.pretty/*
+!/hw/footprints/OpenFireworks.pretty/BatteryHolder_Keystone_2477_4xAA.kicad_mod
+!/hw/footprints/OpenFireworks.pretty/ESP32C3_SuperMini_MINIV1.kicad_mod
+!/hw/footprints/OpenFireworks.pretty/Jack_35mm_PJ320A_THT.kicad_mod
+!/hw/footprints/OpenFireworks.pretty/Switch_Slide_LightCountry_5MS1_M6.kicad_mod
+/hw/modules/*
+!/hw/modules/ESP32C3_SuperMini_MINIV1.kicad_pcb
+
+# --- docs: only the published design + build docs ---
+/docs/*
+!/docs/README.md
+!/docs/RESPIN3_DESIGN.md
+!/docs/RESPIN3_BUILD_AND_FIRMWARE.md
+!/docs/REPRODUCE.md
+
+# --- enclosure: reviews, check images, logs, private packaging ---
+/enclosure/review_buttons/
+/enclosure/renders/*.log
+/enclosure/viewer/make_artifact.py
+/enclosure/viewer/artifact/
+/enclosure/print/make_zip.sh
+/enclosure/print/_tmp/
+
+# --- exports: shop BOMs, module previews, private packages ---
+/export/bom_*.csv
+/export/modules/
+/export/print/
+/export/viewer/
+
+# --- tools: only the scripts of the reproducible pipeline ---
+/tools/**
+!/tools/**/
+!/tools/circuit/check_netlist_v2.py
+!/tools/circuit/gen_symbols.py
+!/tools/circuit/kisch.py
+!/tools/circuit/parts_v2.py
+!/tools/circuit/sheet_v2.py
+!/tools/gen_schematic_v2.py
+!/tools/pcb/autoroute_v2.py
+!/tools/pcb/autoroute_v2_fresh.py
+!/tools/pcb/build_modules.py
+!/tools/pcb/build_v2_board.py
+!/tools/pcb/close_net.py
+!/tools/pcb/export_modules.py
+!/tools/pcb/finish_pours_v2.py
+!/tools/pcb/finish_v2.sh
+!/tools/pcb/fire_path_res.py
+!/tools/pcb/gen_holder_aa.py
+!/tools/pcb/gen_jack_pj320a.py
+!/tools/pcb/gen_modules_v2.py
+!/tools/pcb/gen_outputs_v2.py
+!/tools/pcb/gen_power_parts_v2.py
+!/tools/pcb/maze_route_v2.py
+!/tools/pcb/mcu_via_clearance_fix.py
+!/tools/pcb/open_nets_v2.py
+!/tools/pcb/plot_region.py
+!/tools/pcb/prebuild_gnd_v2.py
+!/tools/pcb/rules_v2.py
+!/tools/pcb/seed_escape.py
+!/tools/pcb/set_stackup_v2.py
+!/tools/pcb/silk_v2.py
+!/tools/pcb/stitch_gnd_astar.py
+!/tools/pcb/stitch_gnd_islands.py
+!/tools/pcb/stitch_gnd_pads.py
+!/tools/pcb/sync_sym_parity.py
+!/tools/publish_pages.sh
+!/tools/render/package-lock.json
+!/tools/render/package.json
+!/tools/render/shoot_viewer.mjs
+
+# --- older versions and private data ---
+/_archive_v1/
+/*.rpt
+/order_*.csv
+/web/studio/*.bak

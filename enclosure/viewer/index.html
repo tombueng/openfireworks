@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenFireworks — enclosure 3D viewer</title>
+<style>
+  :root { --ink:#e8ecf4; --accent:#5aa0ff; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; overflow:hidden; background:#000; color:var(--ink);
+    font:13px/1.35 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif; }
+  #app { position:fixed; inset:0; }
+  #panel { position:fixed; top:12px; left:12px; width:254px; max-height:calc(100vh - 24px); overflow-y:auto;
+    padding:14px 14px 10px; background:rgba(14,17,24,.86); backdrop-filter:blur(8px); border:1px solid #2a3040;
+    border-radius:13px; box-shadow:0 10px 40px rgba(0,0,0,.6); user-select:none; z-index:10; }
+  #panel::-webkit-scrollbar{width:8px} #panel::-webkit-scrollbar-thumb{background:#2f3647;border-radius:8px}
+  h1 { margin:0 0 1px; font-size:15px; } .sub { margin:0 0 10px; font-size:10.5px; color:#8b93a7; }
+  .sec { margin:12px 0 4px; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#7986a0; border-top:1px solid #222838; padding-top:9px; }
+  .row { margin:7px 0; }
+  .row label { display:flex; justify-content:space-between; font-size:11.5px; color:#b9c0d0; margin-bottom:3px; }
+  .row label b { color:var(--accent); font-variant-numeric:tabular-nums; }
+  input[type=range]{ width:100%; accent-color:var(--accent); height:16px; }
+  input[type=color]{ width:34px; height:20px; padding:0; border:1px solid #2f3647; border-radius:4px; background:none; vertical-align:middle; }
+  .cc { display:flex; gap:10px; align-items:center; font-size:11.5px; color:#b9c0d0; margin:6px 0; }
+  .btns { display:flex; gap:7px; margin-top:9px; flex-wrap:wrap; }
+  button { flex:1; min-width:78px; padding:6px 7px; font-size:11.5px; color:var(--ink);
+    background:#1b2130; border:1px solid #2f3647; border-radius:8px; cursor:pointer; }
+  button:hover { border-color:var(--accent); } button.on { background:#20406e; border-color:var(--accent); }
+  #hint { position:fixed; bottom:10px; left:50%; transform:translateX(-50%); font-size:10.5px; color:#6a7284; }
+  #fps { position:fixed; top:12px; right:14px; font-size:11px; color:#6a7284; font-variant-numeric:tabular-nums; }
+  #loading { position:fixed; inset:0; display:grid; place-items:center; color:#8b93a7; background:#000; transition:opacity .5s; z-index:20; }
+  #loading.done { pointer-events:none; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div id="loading">loading the real board + enclosure…</div>
+<div id="fps"></div>
+<div id="panel">
+  <h1>OpenFireworks</h1><p class="sub">24-ch firing node — enclosure + real PCB</p>
+
+  <div class="sec">Explode</div>
+  <div class="row"><label>Open case <b id="vOpen">0%</b></label><input id="open" type="range" min="0" max="100" value="0"></div>
+  <div class="row"><label>PCB lift mm <b id="vPcb">40</b></label><input id="pcb" type="range" min="0" max="120" value="40"></div>
+  <div class="row"><label>Lid lift mm <b id="vLid">85</b></label><input id="lid" type="range" min="0" max="200" value="85"></div>
+
+  <div class="sec">Light & environment</div>
+  <div class="row"><label>Exposure <b id="vExp">0.20</b></label><input id="exp" type="range" min="0.2" max="2.5" step="0.01" value="0.2"></div>
+  <div class="row"><label>Ambient <b id="vAmb">0.43</b></label><input id="amb" type="range" min="0" max="3" step="0.01" value="0.43"></div>
+  <div class="row"><label>Key light <b id="vKey">0.30</b></label><input id="keyl" type="range" min="0" max="8" step="0.05" value="0.3"></div>
+  <div class="row"><label>Reflections <b id="vRef">0.32</b></label><input id="ref" type="range" min="0" max="3" step="0.02" value="0.32"></div>
+  <div class="row"><label>Shadow <b id="vSha">0.03</b></label><input id="sha" type="range" min="0" max="0.8" step="0.01" value="0.03"></div>
+  <div class="row"><label>Spotlights <b id="vSpot">1.00</b></label><input id="spot" type="range" min="0" max="3" step="0.05" value="1"></div>
+  <div class="cc">Background <input id="bg" type="color" value="#070809"></div>
+
+  <div class="sec">LEDs (real light)</div>
+  <div class="row"><label>LED light <b id="vLl">10</b></label><input id="ll" type="range" min="0" max="120" step="0.5" value="10"></div>
+  <div class="row"><label>Die glow <b id="vLedB">8</b></label><input id="ledb" type="range" min="0" max="120" step="0.5" value="8"></div>
+  <div class="row"><label>Light spread mm <b id="vLr">6</b></label><input id="lr" type="range" min="1" max="40" step="0.5" value="6"></div>
+
+  <div class="sec">Glow (bloom)</div>
+  <div class="row"><label>Strength <b id="vBs">0.35</b></label><input id="bs" type="range" min="0" max="2" step="0.01" value="0.35"></div>
+  <div class="row"><label>Threshold <b id="vBt">0.90</b></label><input id="bt" type="range" min="0" max="1" step="0.01" value="0.9"></div>
+  <div class="row"><label>Radius <b id="vBr">0.20</b></label><input id="br" type="range" min="0" max="1" step="0.01" value="0.2"></div>
+
+  <div class="sec">Enclosure</div>
+  <div class="cc">Base <input id="cBase" type="color" value="#0b0b0d"> &nbsp; Lid <input id="cLid" type="color" value="#141418"></div>
+  <div class="row"><label>Roughness <b id="vRgh">0.17</b></label><input id="rgh" type="range" min="0.05" max="1" step="0.01" value="0.17"></div>
+  <div class="row"><label>Window frost <b id="vWf">0.50</b></label><input id="wf" type="range" min="0" max="1" step="0.01" value="0.5"></div>
+  <div class="row"><label>Case opacity <b id="vOp">1.00</b></label><input id="op" type="range" min="0" max="1" step="0.01" value="1.0"></div>
+  <div class="btns"><button id="bEdge">Glass edges</button></div>
+
+  <div class="btns"><button id="bRot" class="on">Auto-rotate</button><button id="bLid">Hide lid</button></div>
+  <div class="btns"><button id="bLeds" class="on">LEDs on</button><button id="bReset">Reset view</button></div>
+</div>
+<div id="hint">drag: orbit · wheel: fly to the cursor · right-drag: pan · W A S D / arrows: move · Q E: down / up · Shift: faster · R: reset</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import * as BGU from 'three/addons/utils/BufferGeometryUtils.js';
+
+const renderer = new THREE.WebGLRenderer({ antialias:true, powerPreference:'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.shadowMap.autoUpdate = false;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
+document.getElementById('app').appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x070809);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const camera = new THREE.PerspectiveCamera(42, innerWidth/innerHeight, 0.5, 6000);
+camera.position.set(190,150,230);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.dampingFactor = 0.08; controls.autoRotate = true; controls.autoRotateSpeed = 0.7;
+// ---- free navigation: constant steps, independent of how far the camera has zoomed in ----
+// OrbitControls only rotates. Wheel = fly a fixed distance along the ray under the cursor; right-drag = pan a
+// fixed distance per pixel; keys = move. Camera and orbit pivot always move together; the pivot is put on the
+// surface under the cursor when a drag starts (on the view axis, so the picture never jumps).
+controls.enableZoom = false; controls.enablePan = false;
+const NAV = { wheel: 14, pan: 0.16, key: 70, fast: 4 };          // mm per notch, mm per pixel, mm per second, Shift factor
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2(), vTmp = new THREE.Vector3(), vDir = new THREE.Vector3();
+const keys = new Set();
+function stopSpin(){ if(controls.autoRotate){ controls.autoRotate=false; const b=document.getElementById('bRot'); if(b) b.classList.remove('on'); } }
+function moveBoth(v){ camera.position.add(v); controls.target.add(v); }
+function cursorRay(e){ const r=renderer.domElement.getBoundingClientRect();
+  ndc.set(((e.clientX-r.left)/r.width)*2-1, -((e.clientY-r.top)/r.height)*2+1); ray.setFromCamera(ndc, camera); return ray; }
+function depthUnderCursor(e){ const hit = cursorRay(e).intersectObjects(root.children, true).find(h=>h.object.visible);
+  camera.getWorldDirection(vDir);
+  return hit ? Math.max(8, vTmp.copy(hit.point).sub(camera.position).dot(vDir)) : null; }
+renderer.domElement.addEventListener('wheel', e=>{ e.preventDefault(); stopSpin();
+  const n = Math.sign(e.deltaY) * Math.min(3, Math.max(1, Math.abs(e.deltaY)/100));      // notches (touchpads send small deltas)
+  const step = -n * NAV.wheel * (e.shiftKey ? NAV.fast : 1);
+  moveBoth(vTmp.copy(cursorRay(e).ray.direction).multiplyScalar(step)); }, { passive:false });
+let panning = null;
+renderer.domElement.addEventListener('pointerdown', e=>{ stopSpin();
+  if(e.button===0){ const d = depthUnderCursor(e);        // orbit around what is under the cursor
+    if(d!==null){ camera.getWorldDirection(vDir); controls.target.copy(camera.position).addScaledVector(vDir, d); } }
+  if(e.button===2){ panning = {x:e.clientX, y:e.clientY}; renderer.domElement.setPointerCapture(e.pointerId); } });
+renderer.domElement.addEventListener('pointermove', e=>{ if(!panning) return;
+  const dx=e.clientX-panning.x, dy=e.clientY-panning.y; panning.x=e.clientX; panning.y=e.clientY;
+  const k = NAV.pan * (e.shiftKey ? NAV.fast : 1);
+  const right = vTmp.setFromMatrixColumn(camera.matrixWorld, 0).multiplyScalar(-dx*k);
+  const up = vDir.setFromMatrixColumn(camera.matrixWorld, 1).multiplyScalar(dy*k);
+  moveBoth(right.add(up)); });
+addEventListener('pointerup', ()=>{ panning=null; });
+renderer.domElement.addEventListener('contextmenu', e=>e.preventDefault());
+addEventListener('keydown', e=>{ if(e.target.tagName==='INPUT') return; const k=e.key.toLowerCase();
+  if(['w','a','s','d','q','e','arrowup','arrowdown','arrowleft','arrowright','pageup','pagedown'].includes(k)){ keys.add(k); stopSpin(); e.preventDefault(); }
+  if(k==='r'){ const b=document.getElementById('bReset'); if(b) b.click(); } });
+addEventListener('keyup', e=>keys.delete(e.key.toLowerCase()));
+addEventListener('blur', ()=>keys.clear());
+function keyMove(dt, fast){ if(!keys.size) return;
+  camera.getWorldDirection(vDir); const fwd = vDir.clone(), right = new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld, 0);
+  const m = new THREE.Vector3(), has = (...a)=>a.some(k=>keys.has(k));
+  if(has('w','arrowup')) m.add(fwd); if(has('s','arrowdown')) m.sub(fwd);
+  if(has('d','arrowright')) m.add(right); if(has('a','arrowleft')) m.sub(right);
+  if(has('e','pageup')) m.y += 1; if(has('q','pagedown')) m.y -= 1;
+  if(m.lengthSq()>0) moveBoth(m.normalize().multiplyScalar(NAV.key * dt * (fast ? NAV.fast : 1))); }
+let shiftDown = false; addEventListener('keydown', e=>{ if(e.key==='Shift') shiftDown=true; }); addEventListener('keyup', e=>{ if(e.key==='Shift') shiftDown=false; });
+
+const key = new THREE.DirectionalLight(0xffffff, 2.4); key.position.set(130,240,120);
+key.castShadow = true; key.shadow.mapSize.set(1024,1024); key.shadow.bias=-0.0005; scene.add(key);
+const fill = new THREE.DirectionalLight(0x9ab6ff, 0.4); fill.position.set(-160,90,-130); scene.add(fill);
+const ambient = new THREE.AmbientLight(0xffffff, 0.45); scene.add(ambient);
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(3000,3000), new THREE.ShadowMaterial({opacity:0.35}));
+ground.rotation.x = -Math.PI/2; ground.receiveShadow = true; scene.add(ground);
+
+// ---- materials ----
+const matBase = new THREE.MeshPhysicalMaterial({ color:0x0b0b0d, roughness:0.45, clearcoat:0.55, clearcoatRoughness:0.3 });
+const matLid  = new THREE.MeshPhysicalMaterial({ color:0x141418, roughness:0.45, clearcoat:0.6,  clearcoatRoughness:0.3 });
+// window plug = printed "clear" PETG: partly see-through (transmission), partly a diffuser that scatters the
+// light of ITS OWN LED below (a soft hotspot over the die, visible from every angle). "Window frost" moves
+// the balance: 0 = glass (die only seen from above), 1 = milky diffuser. The see-through part is kept
+// almost sharp on purpose -- a blurred screen-space transmission would pull in the NEIGHBOURS' light.
+const matWin  = new THREE.MeshPhysicalMaterial({ color:0xb8bec8, roughness:0.04, metalness:0, transmission:1.0,
+  thickness:0.002, ior:1.5, specularIntensity:0.6 });
+// "LED light" = the light the LED sends up its chimney: it makes the window plug glow (scattered, more with
+// frost) and lights the chimney walls (real spot light). "Die glow" = the die itself, seen directly.
+// "Light spread" = how far that light spreads: hotspot size in the window + the spot light's reach.
+const WIN_K = 0.55;            // window glow per unit of LED light
+const SPOT_K = 40;             // spot candela per unit of LED light (world units are mm, decay 2)
+let winFrost = 0.5;
+function winMaterial(led){
+  const m = matWin.clone();
+  const u = { uGlow:{value:0}, uCol:{value: led ? led.col.clone() : new THREE.Color(0)},
+              uDie:{value:new THREE.Vector3()}, uUp:{value:new THREE.Vector3(0,0,1)}, uSigma:{value:0.0024} };
+  m.userData.u = u;
+  m.onBeforeCompile = (sh)=>{
+    Object.assign(sh.uniforms, u);
+    sh.vertexShader = sh.vertexShader.replace('#include <common>', '#include <common>\nvarying vec3 vLocalPos;')
+      .replace('#include <begin_vertex>', '#include <begin_vertex>\nvLocalPos = position;');
+    sh.fragmentShader = sh.fragmentShader.replace('#include <common>',
+        '#include <common>\nvarying vec3 vLocalPos;\nuniform float uGlow; uniform vec3 uCol; uniform vec3 uDie; uniform vec3 uUp; uniform float uSigma;')
+      .replace('#include <emissivemap_fragment>', `#include <emissivemap_fragment>
+        { vec3 r = vLocalPos - uDie; vec3 h = r - dot(r, uUp) * uUp; float d = length(h) / uSigma;
+          totalEmissiveRadiance += uCol * uGlow * (0.15 + 0.85 * exp(-d * d)); }`);
+  };
+  m.customProgramCacheKey = ()=>'ofWindowDiffuser';
+  return m;
+}
+function dieMat(col){ const m = new THREE.MeshStandardMaterial({ color:col.clone().multiplyScalar(0.25), emissive:col.clone(), emissiveIntensity:6, roughness:0.4 }); m.userData.die=true; return m; }
+
+const edgeMat = new THREE.LineBasicMaterial({ color:0x9fc4ff, transparent:true, opacity:0.85 });
+const caseEdges = [];
+const allMats = new Set([matBase, matLid, matWin]);
+const dieMats = [], ledLights = [], animated = [];   // die materials, LED spot lights, pulsing head
+const winNodes = [], ledByName = new Map(), winMats = [];   // windows <-> their LED (same node name)
+let ledsOn = true, dieGlow = 8, ledLight = 10, ledRange = 6;
+function reg(m){ if(m) allMats.add(m); }
+
+function styleObject(g, kind){
+  g.traverse(o=>{
+    if(!o.isMesh) return;
+    if(kind==='base' || kind==='lid'){
+      o.material = (kind==='base')?matBase:matLid; o.castShadow=o.receiveShadow=true;
+      try{ const ls = new THREE.LineSegments(new THREE.EdgesGeometry(o.geometry, 24), edgeMat); ls.visible=false; o.add(ls); caseEdges.push(ls); }catch(e){}
+    }
+    else if(kind==='antenna'){ o.castShadow=true; o.receiveShadow=true; (Array.isArray(o.material)?o.material:[o.material]).forEach(m=>{ if(m){ m.roughness=0.55; reg(m);} }); }
+    else if(kind==='pcb'){ o.castShadow=false; o.receiveShadow=true;   // closed case: the lid shades the board, only the LEDs light it
+      (Array.isArray(o.material)?o.material:[o.material]).forEach(reg); }
+  });
+  // LEDs + windows: one entry per LED NODE (each node holds several primitives -> several Meshes;
+  // one light per Mesh would put ~156 lights in the scene instead of 26).
+  if(kind==='leds' || kind==='windows'){
+    g.updateMatrixWorld(true);
+    const nodes = new Set();   // a multi-primitive node loads as a Group of Meshes; a single-primitive one as a Mesh
+    g.traverse(o=>{ if(o.isMesh) nodes.add((o.parent && o.parent!==g && !o.parent.isScene && o.parent.children.length<=12) ? o.parent : o); });
+    for(const P of nodes){
+      const meshes = P.isMesh ? [P] : P.children.filter(c=>c.isMesh), first = meshes[0];
+      const col = (first.material&&first.material.color)? first.material.color.clone() : new THREE.Color(0x22ff44);
+      const isPulse = /pulse/i.test(P.name||'');
+      if(kind==='windows'){       // material per window, paired with its LED in setupWindows()
+        meshes.forEach(c=>{ c.material=matWin; c.castShadow=c.receiveShadow=false; });
+        winNodes.push({P, meshes, name:P.name||''});
+        continue;
+      }
+      const m = dieMat(col); dieMats.push(m); allMats.add(m);
+      meshes.forEach(c=>{ c.material=m; c.castShadow=c.receiveShadow=false; });
+      // REAL light: a WS2812 emits from its lens UPWARD into the light chimney, not down into the board
+      const L = new THREE.SpotLight(col.getHex(), ledLight*SPOT_K, ledRange*3, Math.PI/3, 0.6, 2); L.castShadow=false;
+      // world "up" (+Y) expressed in this node's own frame (the GLB nodes are Z-up under a rotated root)
+      const up = new THREE.Vector3(0,1,0).transformDirection(P.matrixWorld.clone().invert());
+      L.position.copy(up).multiplyScalar(0.00015);       // just above the lens (node units = metres)
+      const tgt = new THREE.Object3D(); tgt.position.copy(up).multiplyScalar(0.02); L.target = tgt;
+      P.add(L); P.add(tgt); ledLights.push({light:L, pulse:isPulse});
+      if(isPulse) animated.push({die:m, light:L});
+      ledByName.set(P.name||'', {P, col, m, L, isPulse});
+    }
+  }
+}
+
+
+// pair every window with the LED of the same node name; die centre + "up" in the window mesh's own frame
+function setupWindows(){
+  root.updateMatrixWorld(true);
+  for(const w of winNodes){
+    const led = ledByName.get(w.name) || null;
+    const m = winMaterial(led); allMats.add(m);
+    const mesh = w.meshes[0], inv = mesh.matrixWorld.clone().invert();
+    if(led){ const c = new THREE.Box3().setFromObject(led.P).getCenter(new THREE.Vector3());
+      m.userData.u.uDie.value.copy(c.applyMatrix4(inv)); }
+    m.userData.u.uUp.value.copy(new THREE.Vector3(0,1,0).transformDirection(inv));
+    w.meshes.forEach(c=>c.material=m);
+    winMats.push({m, led});
+    if(led && led.isPulse) animated.push({win:m});
+  }
+}
+
+// studio spotlights (stage look): warm key from the front-left, cool rim from behind, a narrow white top
+// spot. They light a dark floor (visible light pools) and get a faint additive light cone each.
+const spots = [];
+let spotK = 1.0;
+const floor = new THREE.Mesh(new THREE.CircleGeometry(1600, 96),
+  new THREE.MeshStandardMaterial({ color:0x26282c, roughness:0.68, metalness:0.0, envMapIntensity:0.05 }));   // no IBL wash: pools stay visible
+floor.rotation.x = -Math.PI/2; floor.receiveShadow = false; scene.add(floor);   // shadows: the 'ground' catcher above it
+const coneVS = `uniform float uH; varying float vT; varying vec3 vN; varying vec3 vV;
+  void main(){ vT = (uH*0.5 - position.y) / uH;                        // 0 at the lamp, 1 at the floor
+    vec4 mv = modelViewMatrix * vec4(position,1.0); vN = normalize(normalMatrix*normal); vV = normalize(-mv.xyz);
+    gl_Position = projectionMatrix * mv; }`;
+const coneFS = `uniform vec3 uCol; uniform float uK; varying float vT; varying vec3 vN; varying vec3 vV;
+  void main(){ float edge = pow(abs(dot(vN, vV)), 1.6);                 // soft cone rim
+    gl_FragColor = vec4(uCol * uK * pow(clamp(1.0 - vT, 0.0, 1.0), 1.4) * edge, 1.0); }`;   // clamp: pow(<0) = NaN -> bloom smears black squares
+function setupSpots(s){
+  floor.position.y = ground.position.y - 0.05;
+  const defs = [ {c:0xffd2a0, i:12.0, p:[-1.3, 1.7, 1.2], a:0.40, pen:0.5, shadow:true},
+                 {c:0x8fb8ff, i:10.0, p:[ 1.6, 1.1,-1.5], a:0.36, pen:0.5},
+                 {c:0xffffff, i:6.0, p:[ 0.25,2.6, 0.35], a:0.20, pen:0.6} ];
+  for(const d of defs){
+    const L = new THREE.SpotLight(d.c, d.i, 0, d.a, d.pen, 0);     // decay 0: intensity independent of scale
+    L.position.set(d.p[0]*s, d.p[1]*s, d.p[2]*s); L.target.position.set(0,0,0);
+    if(d.shadow){ L.castShadow = true; L.shadow.mapSize.set(1024,1024); L.shadow.bias = -0.0004;
+      L.shadow.camera.near = s*0.5; L.shadow.camera.far = s*6; }
+    scene.add(L); scene.add(L.target);
+    // visible beam: cone from the lamp to the floor along the spot axis
+    const dir = L.target.position.clone().sub(L.position).normalize();
+    const h = (L.position.y - floor.position.y) / Math.max(0.05, -dir.y);
+    const u = { uH:{value:h}, uCol:{value:new THREE.Color(d.c)}, uK:{value:0} };
+    const cone = new THREE.Mesh(new THREE.ConeGeometry(h*Math.tan(d.a), h, 48, 1, true),
+      new THREE.ShaderMaterial({ uniforms:u, vertexShader:coneVS, fragmentShader:coneFS, transparent:true,
+        blending:THREE.AdditiveBlending, depthWrite:false, side:THREE.FrontSide }));
+    cone.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), dir.clone().negate());   // apex at the lamp
+    cone.position.copy(L.position).addScaledVector(dir, h/2); cone.renderOrder = 10; scene.add(cone);
+    spots.push({L, base:d.i, cone, u});
+  }
+  applySpots();
+}
+function applySpots(){ for(const o of spots){ o.L.intensity = o.base * spotK; o.L.visible = spotK > 0;
+    o.u.uK.value = 0.06 * spotK; o.cone.visible = spotK > 0; } renderer.shadowMap.needsUpdate = true; }
+
+// merge the real PCB by material -> far fewer draw calls
+function mergePCB(rootScene){
+  rootScene.updateMatrixWorld(true);
+  const byMat = new Map();
+  rootScene.traverse(o=>{ if(!o.isMesh||!o.geometry) return;
+    const m = (Array.isArray(o.material)?o.material:[o.material])[0]; if(!m) return;
+    const g = o.geometry.clone(); g.applyMatrix4(o.matrixWorld);
+    for(const k of Object.keys(g.attributes)) if(k!=='position'&&k!=='normal') g.deleteAttribute(k);
+    if(!byMat.has(m)) byMat.set(m,[]); byMat.get(m).push(g); });
+  const out = new THREE.Group();
+  for(const [m,geos] of byMat){ try{ const mm=BGU.mergeGeometries(geos,false); if(mm){ const me=new THREE.Mesh(mm,m); me.castShadow=me.receiveShadow=false; out.add(me); reg(m);} }
+    catch(e){ for(const g of geos) out.add(new THREE.Mesh(g,m)); } }
+  return out;
+}
+
+// ---- load ----
+const groups = {}, home = {};
+const root = new THREE.Group(); scene.add(root);
+let explodeDir = 1, modelSize = 120, homeCam = null;
+const loader = new GLTFLoader();
+loader.setRequestHeader({'Cache-Control':'no-cache'});   // always revalidate: the GLBs are regenerated in place
+const files = [['base','base'],['lid','lid'],['windows','windows'],['leds','leds'],['pcb','pcb'],['antenna','antenna']];
+let pending = files.length;
+for(const [file, kind] of files){
+  loader.load(file+'.glb', (gltf)=>{
+    let g = gltf.scene;
+    if(kind==='pcb') g = mergePCB(g);   // pcb.glb is already turned display-up (a rotation, not a mirror) by board_model.py
+    g.scale.setScalar(1000);            // all five GLBs share the enclosure frame, in metres
+    styleObject(g, kind); groups[kind]=g; root.add(g);
+    if(--pending===0) onReady();
+  }, undefined, (err)=>{ document.getElementById('loading').textContent='failed to load '+file+'.glb — run serve.sh (needs http)'; console.error(err); });
+}
+function onReady(){
+  const bb=new THREE.Box3(), size=new THREE.Vector3(), ctr=new THREE.Vector3();   // frame the case, not the tall antenna
+  for(const k of ['base','lid','pcb']) if(groups[k]) bb.expandByObject(groups[k]);
+  bb.getSize(size); bb.getCenter(ctr); root.position.sub(ctr);
+  modelSize = Math.max(size.x,size.y,size.z);
+  for(const k of ['base','lid','windows','pcb','leds']) home[k]=groups[k]?groups[k].position.y:0;
+  ground.position.y = bb.min.y - ctr.y - 0.5;
+  setupWindows();
+  setupSpots(modelSize);
+  const s=modelSize; Object.assign(key.shadow.camera,{left:-s,right:s,top:s,bottom:-s,near:20,far:s*8}); key.shadow.camera.updateProjectionMatrix();
+  // ~60 deg above the lid: the dies sit ~6 mm under the window top in 6 mm wide chimneys, so they are in
+  // direct view only from steep angles (flatter views see the chimney, exactly like the real clear plugs)
+  camera.position.set(s*0.66,s*1.8,s*0.8); controls.target.set(0,0,0); controls.update(); homeCam=camera.position.clone();
+  // the slider values in the HTML ARE the defaults: apply each once
+  document.querySelectorAll('#panel input[type=range]').forEach(i=>i.dispatchEvent(new Event('input')));
+  applyLed(); renderer.shadowMap.needsUpdate=true;
+  const l=document.getElementById('loading'); l.style.opacity=0; l.classList.add('done'); setTimeout(()=>l.remove(),600);
+  applyExplode();
+  dispatchEvent(new Event('of-ready'));
+}
+
+// ---- controls ----
+const S={open:0,pcb:40,lid:85}; const el=id=>document.getElementById(id);
+function setY(k,y){ if(groups[k]) groups[k].position.y=(home[k]||0)+explodeDir*y; }
+function applyExplode(){ const o=S.open/100; applyWin(); setY('pcb',o*S.pcb); setY('leds',o*S.pcb); setY('lid',o*S.lid); setY('windows',o*S.lid); renderer.shadowMap.needsUpdate=true; }
+function applyReflect(v){ allMats.forEach(m=>{ if('envMapIntensity' in m) m.envMapIntensity=v; }); }
+function winGlow(){   // diffuser brightness (a printed plug always scatters a little); fades out once the lid is lifted
+  return ledsOn ? ledLight * WIN_K * (0.1 + 0.9 * winFrost) * Math.max(0, 1 - S.open / 8) : 0; }
+function spotI(){ return ledsOn ? ledLight * SPOT_K : 0; }
+function applyWin(){ for(const w of winMats){ const u=w.m.userData.u; u.uGlow.value = w.led ? winGlow() : 0;
+    u.uSigma.value = 0.0004 * ledRange;                     // node units = m: spread 6 mm -> 2.4 mm hotspot
+    w.m.transmission = 1 - 0.85 * winFrost; w.m.roughness = 0.03 + 0.07 * winFrost; } }
+function applyLed(){ for(const m of dieMats) m.emissiveIntensity = ledsOn?dieGlow:0; applyWin();
+  for(const o of ledLights){ o.light.intensity = spotI(); o.light.distance = ledRange*3; o.light.visible = ledsOn && ledLight>0; } }
+const bind=(id,vid,fn,fmt)=>{ el(id).oninput=e=>{ const v=+e.target.value; el(vid).textContent=fmt?fmt(v):v; fn(v); }; };
+bind('open','vOpen',v=>{S.open=v;applyExplode();},v=>v+'%');
+bind('pcb','vPcb',v=>{S.pcb=v;applyExplode();}); bind('lid','vLid',v=>{S.lid=v;applyExplode();});
+bind('exp','vExp',v=>renderer.toneMappingExposure=v,v=>v.toFixed(2));
+bind('amb','vAmb',v=>ambient.intensity=v,v=>v.toFixed(2));
+bind('keyl','vKey',v=>key.intensity=v,v=>v.toFixed(2));
+bind('ref','vRef',v=>applyReflect(v),v=>v.toFixed(2));
+bind('sha','vSha',v=>ground.material.opacity=v,v=>v.toFixed(2));
+bind('spot','vSpot',v=>{spotK=v;applySpots();},v=>v.toFixed(2));
+bind('ll','vLl',v=>{ledLight=v;applyLed();});
+bind('ledb','vLedB',v=>{dieGlow=v;applyLed();});
+bind('lr','vLr',v=>{ledRange=v;applyLed();});
+bind('bs','vBs',v=>bloom.strength=v,v=>v.toFixed(2));
+bind('bt','vBt',v=>bloom.threshold=v,v=>v.toFixed(2));
+bind('br','vBr',v=>bloom.radius=v,v=>v.toFixed(2));
+bind('rgh','vRgh',v=>{matBase.roughness=v;matLid.roughness=v;},v=>v.toFixed(2));
+bind('wf','vWf',v=>{winFrost=v;applyWin();},v=>v.toFixed(2));
+function setCaseOpacity(v){ for(const m of [matBase,matLid]){ m.opacity=v; m.transparent=v<0.99; m.depthWrite=v>0.5; m.needsUpdate=true; } }
+bind('op','vOp',v=>setCaseOpacity(v),v=>v.toFixed(2));
+let edgesOn=false;
+el('bEdge').onclick=e=>{ edgesOn=!edgesOn; caseEdges.forEach(l=>l.visible=edgesOn); e.target.classList.toggle('on',edgesOn);
+  const v = edgesOn?0.10:1.0; el('op').value=v; el('vOp').textContent=v.toFixed(2); setCaseOpacity(v); };   // one-click glass look
+el('bg').oninput=e=>scene.background.set(e.target.value);
+el('cBase').oninput=e=>matBase.color.set(e.target.value);
+el('cLid').oninput=e=>matLid.color.set(e.target.value);
+el('bRot').onclick=e=>{controls.autoRotate=!controls.autoRotate;e.target.classList.toggle('on',controls.autoRotate);};
+el('bLid').onclick=e=>{const v=!groups.lid.visible;groups.lid.visible=v;groups.windows.visible=v;e.target.textContent=v?'Hide lid':'Show lid';e.target.classList.toggle('on',!v);renderer.shadowMap.needsUpdate=true;};
+el('bLeds').onclick=e=>{ledsOn=!ledsOn;e.target.classList.toggle('on',ledsOn);e.target.textContent=ledsOn?'LEDs on':'LEDs off';applyLed();};
+el('bReset').onclick=()=>{if(homeCam)camera.position.copy(homeCam);controls.target.set(0,0,0);};
+
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth,innerHeight), 0.08, 0.20, 0.90);
+composer.addPass(bloom); composer.addPass(new OutputPass());
+addEventListener('resize', ()=>{ camera.aspect=innerWidth/innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth,innerHeight); composer.setSize(innerWidth,innerHeight); });
+
+const t0=performance.now(); let fa=0, fT=performance.now(), benchBusy=false;
+let lastT = performance.now();
+function frame(){
+  const nowT = performance.now(), dt = Math.min(0.1, (nowT-lastT)/1000); lastT = nowT; keyMove(dt, shiftDown);
+  const t=(performance.now()-t0)/1000;
+  const ph=t%1.0, pulse = ph<0.16 ? (1-ph/0.16) : 0;     // head LED: brief green pulse once a second
+  for(const a of animated){ const k = ledsOn ? (0.1 + pulse*0.95) : 0;
+    if(a.die){ a.die.emissiveIntensity = dieGlow*k; a.light.intensity = spotI()*k; }
+    if(a.win){ a.win.userData.u.uGlow.value = winGlow()*k; } }
+  controls.update(); composer.render();
+}
+(function loop(){
+  requestAnimationFrame(loop);
+  if(benchBusy) return;
+  frame();
+  const now=performance.now();
+  if(++fa>=20){ el('fps').textContent=Math.round(fa*1000/(now-fT))+' fps'; fa=0; fT=now; }
+})();
+
+// #bench: GPU time per frame, measured synchronously (gl.finish) so a hidden/throttled tab still gives
+// real numbers. Shows the cost of the 26 LED lights and of the bloom pass separately.
+async function bench(){
+  benchBusy=true; const gl=renderer.getContext(), N=40;
+  const time=()=>{ frame(); gl.finish(); const a=performance.now(); for(let i=0;i<N;i++) frame(); gl.finish(); return (performance.now()-a)/N; };
+  const r={}, px=renderer.getDrawingBufferSize(new THREE.Vector2());
+  r.full=time();
+  const ll=ledLight; ledLight=0; applyLed(); r.noLedLights=time(); ledLight=ll; applyLed();
+  bloom.enabled=false; r.noBloom=time(); bloom.enabled=true;
+  benchBusy=false;
+  const s=`GPU ms/frame @${px.x}x${px.y}: full ${r.full.toFixed(1)} · LED lights off ${r.noLedLights.toFixed(1)} · bloom off ${r.noBloom.toFixed(1)}`;
+  console.log('[bench]', s, r); el('fps').textContent=s; window.__bench=r; return r;
+}
+window.__ofBench = bench;
+if(location.hash.includes('bench')) addEventListener('of-ready', ()=>setTimeout(bench, 800), {once:true});
+</script>
+</body>
+</html>
